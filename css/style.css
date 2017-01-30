@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:400,300,500);
+html {
+  background-color: #999;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 12px 15px;
+}
+
+.calculator {
+  font-family: 'Exo', sans-serif;
+  background-color: #dad9e3;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /* future proofing */
+  -khtml-border-radius: 10px;
+  /* for old Konqueror browsers */
+  padding-top: 2px;
+  border: 10px solid #dad9e3;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.numpad {
+  width: 100%;
+}
+
+.calculator td {
+  width: 25%;
+  height: 50px;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fefefe;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  margin-top: 35px;
+  transition-property: background;
+  transition-duration: .8s;
+  transition-timing-function: easeOutCubic;
+  /* prevent user from selecting the text */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Remove highlight color on Android */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.calculator td:hover {
+  background: #ecf075;
+}
+
+.calculator td:active {
+  background: #666;
+}
+
+#output {
+  background-color: #666;
+  color: #fefefe;
+  padding: 25px;
+  font-weight: 300;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-align: right;
+  font-size: 1.5em;
+  font-family: 'Exo', sans-serif;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  /* future proofing */
+  -khtml-border-radius: 20px;
+  /* for old Konqueror browsers */
+  margin: 12px;
+}
+
+td.clear {
+  background-color: #ff528f;
+}
+
+td.equals {
+  background-color: #d2e8ce;
+}
+
+td.main-op {
+  background-color: #ff82b1;
+}
+
+td.advanced-op {
+  background-color: #e59ffc;
+}
+

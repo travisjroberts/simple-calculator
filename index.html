@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="calculator">
+  <div id="output">0</div>
+  <table class="numpad">
+    <tr>
+      <td class="advanced-op" onclick="onModulo()">
+        mod
+      </td>
+      <td class="advanced-op" onclick="onPercent()">
+        &#37;
+      </td>
+      <td class="advanced-op" onclick="onSquare()">
+        &#8730;
+      </td>
+      <td class="clear" onclick="onClear()">
+        C
+      </td>
+    </tr>
+    <tr>
+      <td onclick="onNumkey(7)">
+        7
+      </td>
+      <td onclick="onNumkey(8)">
+        8
+      </td>
+      <td onclick="onNumkey(9)">
+        9
+      </td>
+      <td class="main-op" onclick="onMinus()">
+        -
+      </td>
+    </tr>
+    <tr>
+      <td onclick="onNumkey(4)">
+        4
+      </td>
+      <td onclick="onNumkey(5)">
+        5
+      </td>
+      <td onclick="onNumkey(6)">
+        6
+      </td>
+      <td class="main-op" onclick="onDivide()">
+        ÷
+      </td>
+    </tr>
+    <tr>
+      <td onclick="onNumkey(1)">
+        1
+      </td>
+      <td onclick="onNumkey(2)">
+        2
+      </td>
+      <td onclick="onNumkey(3)">
+        3
+      </td>
+      <td class="main-op" onclick="onMultiply()">
+        x
+      </td>
+    </tr>
+    <tr>
+      <td onclick="onDecimal()">
+        .
+      </td>
+      <td onclick="onNumkey(0)">
+        0
+      </td>
+      <td class="equals" onclick="onEquals()">
+        =
+      </td>
+      <td class="main-op" onclick="onPlus()">
+        +
+      </td>
+    </tr>
+  </table>
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
